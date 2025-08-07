@@ -58,10 +58,7 @@ function App() {
           <Heading1>오시는 길</Heading1>
           <Location />
         </Wrapper>
-        <Wrapper>
-          <Heading1>신랑 신부에게</Heading1>
-          <Guestbook />
-        </Wrapper>
+        <Wrapper></Wrapper>
         <FloatingBar isVisible={isVisible} />
       </Container>
     </NavermapsProvider>
