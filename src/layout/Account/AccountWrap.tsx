@@ -20,12 +20,12 @@ const AccountWrap = ({
   tossAccount,
 }: IAccountProps) => {
   const handleCopy = () => {
-    navigator.clipboard.writeText(account).then(
+    navigator.clipboard.writeText(`${bank} ${account}`).then(
       () => {
-        alert('계좌번호가 복사되었습니다.😉😉');
+        console.log('계좌번호가 복사되었습니다.😉😉');
       },
       () => {
-        alert('계좌번호 복사에 실패했습니다.🥲🥲');
+        console.log('계좌번호 복사에 실패했습니다.🥲🥲');
       },
     );
   };
@@ -48,6 +48,7 @@ const AccountWrap = ({
         {kakaopayAccount && (
           <AccountButton href={kakaopayAccount} target="_blank" rel="noreferrer">
             <KakaopayImg src={kakaopay} alt="kakaopay" />
+            <AccountInfo>{'카카오 송금'}</AccountInfo>
           </AccountButton>
         )}
         {tossAccount && (
@@ -83,7 +84,7 @@ const Relation = styled.span`
   color: #44484d;
 `;
 const Name = styled.span`
-  font-size: 1rem
+  font-size: 1rem;
 `;
 
 const Details = styled.div`
@@ -114,19 +115,18 @@ const AccountButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #dfdfdf;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px 0;
-  padding: 0 0.8em;
+  padding: 0.6em 0.8em;
   width: inherit;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   cursor: pointer;
   gap: 2px;
   color: #1a1a1a;
   text-decoration: none;
   outline: none;
   box-shadow: none;
-  background: white;
+  background: #fde638;
 `.withComponent('a');
 
 const KakaopayImg = styled.img`
