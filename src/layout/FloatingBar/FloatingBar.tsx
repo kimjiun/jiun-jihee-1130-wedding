@@ -26,10 +26,10 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(
       () => {
-        alert('주소가 복사되었습니다.😉😉');
+        console.log('주소가 복사되었습니다.😉😉');
       },
       () => {
-        alert('주소 복사에 실패했습니다.🥲🥲');
+        console.log('주소 복사에 실패했습니다.🥲🥲');
       },
     );
   };
@@ -57,7 +57,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
       </Button>
       <Button onClick={handleCopy}>
         <Share fill="#e88ca6" />
-        공유
+        링크 공유
       </Button>
       <Button onClick={handleScroll}>
         <Upward fill="#e88ca6" />

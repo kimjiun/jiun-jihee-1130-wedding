@@ -13,91 +13,96 @@ import image13 from '@/assets/images/13.jpg';
 import image14 from '@/assets/images/14.jpg';
 import image15 from '@/assets/images/15.jpg';
 
+const portaraitWidth = 683;
+const portaraitHeight = 1024;
+const landScapeWidth = 1023;
+const landScapeHeight = 683;
+
 const images = [
   /* 이미지 경로를 리스트로 저장 */
   {
     alt: 'image02',
     source: image02,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image03',
     source: image03,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image04',
     source: image04,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image05',
     source: image05,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image06',
     source: image06,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image07',
     source: image07,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image08',
     source: image08,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image09',
     source: image09,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image10',
     source: image10,
-    width: 640,
-    height: 960,
+    width: landScapeWidth,
+    height: landScapeHeight,
   },
   {
     alt: 'image11',
     source: image11,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image12',
     source: image12,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image13',
     source: image13,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image14',
     source: image14,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
   {
     alt: 'image15',
     source: image15,
-    width: 640,
-    height: 960,
+    width: portaraitWidth,
+    height: portaraitHeight,
   },
 ];
 
