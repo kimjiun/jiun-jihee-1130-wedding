@@ -214,7 +214,7 @@ Error generating stack: `+o.message+`
   color: #1a1a1a;
   text-decoration: none;
   gap: 2px;
-`.withComponent("a"),S_=({isVisible:e})=>{const{emojis:t}=Xt,n=()=>{navigator.clipboard.writeText(window.location.href).then(()=>{console.log("주소가 복사되었습니다.😉😉")},()=>{console.log("주소 복사에 실패했습니다.🥲🥲")})},r=()=>{i.addConfetti({emojis:t})},i=new v_;return ee(__,{isVisible:e,children:[z(ni,{onClick:r,children:z(g_,{fill:"#e88ca6"})}),ee(ni,{onClick:n,children:[z(y_,{fill:"#e88ca6"}),"공유"]}),ee(ni,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[z(w_,{fill:"#e88ca6"}),"위로"]})]})},__=$.nav`
+`.withComponent("a"),S_=({isVisible:e})=>{const{emojis:t}=Xt,n=()=>{navigator.clipboard.writeText(window.location.href).then(()=>{console.log("주소가 복사되었습니다.😉😉")},()=>{console.log("주소 복사에 실패했습니다.🥲🥲")})},r=()=>{i.addConfetti({emojis:t})},i=new v_;return ee(__,{isVisible:e,children:[z(ni,{onClick:r,children:z(g_,{fill:"#e88ca6"})}),ee(ni,{onClick:n,children:[z(y_,{fill:"#e88ca6"}),"링크 공유"]}),ee(ni,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[z(w_,{fill:"#e88ca6"}),"위로"]})]})},__=$.nav`
   min-width: 280px;
   position: fixed;
   bottom: 30px;
