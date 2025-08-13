@@ -1,17 +1,4 @@
-import image02 from '@/assets/images/02.jpg';
-import image03 from '@/assets/images/03.jpg';
-import image04 from '@/assets/images/04.jpg';
-import image05 from '@/assets/images/05.jpg';
-import image06 from '@/assets/images/06.jpg';
-import image07 from '@/assets/images/07.jpg';
-import image08 from '@/assets/images/08.jpg';
-import image09 from '@/assets/images/09.jpg';
-import image10 from '@/assets/images/10.jpg';
-import image11 from '@/assets/images/11.jpg';
-import image12 from '@/assets/images/12.jpg';
-import image13 from '@/assets/images/13.jpg';
-import image14 from '@/assets/images/14.jpg';
-import image15 from '@/assets/images/15.jpg';
+import data from 'data.json';
 
 const portaraitWidth = 683;
 const portaraitHeight = 1024;
@@ -22,85 +9,85 @@ const images = [
   /* 이미지 경로를 리스트로 저장 */
   {
     alt: 'image02',
-    source: image02,
+    source: `${data.bucketUrl}02.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image03',
-    source: image03,
+    source: `${data.bucketUrl}03.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image04',
-    source: image04,
+    source: `${data.bucketUrl}04.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image05',
-    source: image05,
+    source: `${data.bucketUrl}05.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image06',
-    source: image06,
+    source: `${data.bucketUrl}06.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image07',
-    source: image07,
+    source: `${data.bucketUrl}07.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image08',
-    source: image08,
+    source: `${data.bucketUrl}08.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image09',
-    source: image09,
+    source: `${data.bucketUrl}09.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image10',
-    source: image10,
+    source: `${data.bucketUrl}10.jpg`,
     width: landScapeWidth,
     height: landScapeHeight,
   },
   {
     alt: 'image11',
-    source: image11,
+    source: `${data.bucketUrl}11.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image12',
-    source: image12,
+    source: `${data.bucketUrl}12.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image13',
-    source: image13,
+    source: `${data.bucketUrl}13.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image14',
-    source: image14,
+    source: `${data.bucketUrl}14.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
   {
     alt: 'image15',
-    source: image15,
+    source: `${data.bucketUrl}15.jpg`,
     width: portaraitWidth,
     height: portaraitHeight,
   },
