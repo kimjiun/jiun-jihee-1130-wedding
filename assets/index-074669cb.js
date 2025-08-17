@@ -252,7 +252,7 @@ Error generating stack: `+o.message+`
     rgb(255, 255, 255) 90%
   );
 `,X2=j.div`
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   padding: 6px 12px;
   font-size: 1rem;
