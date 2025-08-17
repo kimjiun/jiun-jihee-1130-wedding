@@ -12,8 +12,6 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCopy = () => {
     if (navigator.share) {
       navigator.share({
-          title: '모바일 청첩장',
-          text: '청첩장을 공유합니다.',
           url: window.location.href,
         }).catch(console.error);
     } else {      
