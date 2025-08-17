@@ -6,7 +6,7 @@ const Container = styled.div`
   border-image-slice: 30% 49%; /* 이미지의 크기 설정 */
   border-image-width: 280px; /* 테두리 이미지의 너비 설정 */
   background-color: #ffffff;
-  width: 85vw;
+  width: 80vw;
   margin: 0 auto;
 
   @media screen and (min-width: 500px) {
