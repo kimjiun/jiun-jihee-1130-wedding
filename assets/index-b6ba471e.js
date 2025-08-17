@@ -215,7 +215,7 @@ Error generating stack: `+o.message+`
   color: #1a1a1a;
   text-decoration: none;
   gap: 2px;
-`.withComponent("a"),__=({isVisible:e})=>{const{emojis:t}=oe,n=()=>{navigator.share?navigator.share({title:"모바일 청첩장",text:"청첩장을 공유합니다.",url:window.location.href}).catch(console.error):navigator.clipboard.writeText(window.location.href).then(()=>{console.log("주소가 복사되었습니다.😉😉")},()=>{console.log("주소 복사에 실패했습니다.🥲🥲")})},r=()=>{i.addConfetti({emojis:t})},i=new g_;return J(x_,{isVisible:e,children:[z(ni,{onClick:r,children:z(y_,{fill:"#e88ca6"})}),J(ni,{onClick:n,children:[z(w_,{fill:"#e88ca6"}),"링크 공유"]}),J(ni,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[z(S_,{fill:"#e88ca6"}),"위로"]})]})},x_=j.nav`
+`.withComponent("a"),__=({isVisible:e})=>{const{emojis:t}=oe,n=()=>{navigator.share?navigator.share({url:window.location.href}).catch(console.error):navigator.clipboard.writeText(window.location.href).then(()=>{console.log("주소가 복사되었습니다.😉😉")},()=>{console.log("주소 복사에 실패했습니다.🥲🥲")})},r=()=>{i.addConfetti({emojis:t})},i=new g_;return J(x_,{isVisible:e,children:[z(ni,{onClick:r,children:z(y_,{fill:"#e88ca6"})}),J(ni,{onClick:n,children:[z(w_,{fill:"#e88ca6"}),"링크 공유"]}),J(ni,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[z(S_,{fill:"#e88ca6"}),"위로"]})]})},x_=j.nav`
   min-width: 280px;
   position: fixed;
   bottom: 30px;
