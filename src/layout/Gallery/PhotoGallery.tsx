@@ -8,8 +8,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer',
     objectFit: 'contain',
-    width: '26vw',
-    height: '39vw',
+    width: '90px',
+    height: '135px',
   };
   const photoswipeRef = useRef<PhotoSwipe | null>(null);
 
