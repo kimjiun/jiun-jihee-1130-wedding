@@ -28,7 +28,7 @@ const MainImg = styled.img`
 `;
 
 const Ring = styled.span`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 `;
 
 const MainTitle = styled.p`
