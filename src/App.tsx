@@ -9,6 +9,7 @@ import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
@@ -60,6 +61,7 @@ function App() {
         <Wrapper></Wrapper>
         <FloatingBar isVisible={isVisible} />
       </Container>
+      <ToastContainer />
     </NavermapsProvider>
   );
 }

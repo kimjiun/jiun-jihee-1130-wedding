@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 import Copy from '@/assets/icons/copy.svg?react';
 import kakaopay from '@/assets/icons/kakaopay.png?url';
 import toss from '@/assets/icons/toss.png?url';
+import { toast, ToastOptions } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface IAccountProps {
   name: string;
@@ -11,6 +13,14 @@ interface IAccountProps {
   kakaopayAccount?: string;
   tossAccount?: string;
 }
+
+const mobileType = navigator.userAgent.toLowerCase();
+const toastOptions: ToastOptions = {
+  position: "bottom-center",
+  autoClose: 500,
+  hideProgressBar: true,
+}
+
 const AccountWrap = ({
   name,
   relation,
@@ -22,10 +32,12 @@ const AccountWrap = ({
   const handleCopy = () => {
     navigator.clipboard.writeText(`${bank} ${account}`).then(
       () => {
-        console.log('계좌번호가 복사되었습니다.😉😉');
+        if(mobileType.indexOf('android') < 0) {
+          toast("계좌번호가 복사되었습니다.", toastOptions);
+        }
       },
       () => {
-        console.log('계좌번호 복사에 실패했습니다.🥲🥲');
+        console.error("계좌번호가 복사에 실패했습니다.");
       },
     );
   };

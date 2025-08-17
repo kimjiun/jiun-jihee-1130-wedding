@@ -5,24 +5,57 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
+import { toast, ToastOptions } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// For Android WebView Javascript Interface
+declare global {
+  interface Window {
+    Android?: {
+      share: (url: string) => void;
+    };
+  }
+}
+
+const mobileType = navigator.userAgent.toLowerCase();
+const toastOptions: ToastOptions = {
+  position: "bottom-center",
+  autoClose: 500,
+  hideProgressBar: true,
+}
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
 
   const handleCopy = () => {
-    if (navigator.share) {
-      navigator.share({
-          url: window.location.href,
-        }).catch(console.error);
-    } else {      
-      navigator.clipboard.writeText(window.location.href).then(
+    const url = window.location.href;
+
+    // 1. Check for native Android interface (if in a WebView)
+    if (window.Android?.share) {
+      window.Android.share(url);
+    }
+    // 2. Check for standard Web Share API
+    else if (navigator.share) {
+      navigator
+        .share({
+          url: url,
+        })
+        .catch((error) => {
+          console.error('Web Share API error:', error);
+        });
+    }
+    // 3. Fallback to clipboard for desktop/unsupported browsers
+    else {
+      navigator.clipboard.writeText(url).then(
         () => {
-          console.log('주소가 복사되었습니다.😉😉');
+          if(mobileType.indexOf('android') < 0) {
+            toast("주소가 복사되었습니다.", toastOptions);
+          }
         },
         () => {
-          console.log('주소 복사에 실패했습니다.🥲🥲');
+          console.error("주소 복사에 실패했습니다.");
         },
-      );  
+      );
     }
   };
 
