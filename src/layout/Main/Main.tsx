@@ -3,10 +3,16 @@ import data from 'data.json';
 
 const Main = () => {
   const { greeting } = data;
+  const titleParts = greeting.title.split('💍');
+
   return (
     <div>
       <MainImg src={`${data.bucketUrl}01.jpg`} />
-      <MainTitle>{greeting.title}</MainTitle>
+      <MainTitle>
+        {titleParts[0]}
+        <Ring>💍</Ring>
+        {titleParts[1]}
+      </MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>
     </div>
   );
@@ -19,6 +25,10 @@ const MainImg = styled.img`
   width: 90%;
   max-width: 450px;
   padding-top: 20px;
+`;
+
+const Ring = styled.span`
+  font-size: 1.5rem;
 `;
 
 const MainTitle = styled.p`
