@@ -42,7 +42,12 @@ const PhotoGallery = () => {
   };
 
   return (
-    <Gallery withCaption onBeforeOpen={handleBeforeOpen}>
+    <Gallery
+      withCaption
+      onBeforeOpen={handleBeforeOpen}
+      options={{
+        closeOnVerticalDrag: false
+      }}>
       <div
         style={{
           display: 'grid',
