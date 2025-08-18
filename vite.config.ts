@@ -14,8 +14,6 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         groom: resolve(__dirname, 'groom.html'),
         bride: resolve(__dirname, 'bride.html'),
-        bride_dad: resolve(__dirname, 'bride_dad.html'),
-        bride_mom: resolve(__dirname, 'bride_mom.html'),
       },
     },
   },
