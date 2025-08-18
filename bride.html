@@ -25,6 +25,15 @@
       type="text/javascript"
       src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=%VITE_APP_NAVERMAPS_CLIENT_ID%"
     ></script>
+    <script 
+      src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.6/kakao.min.js" 
+      integrity="%VITE_APP_KAKAO_INTEGRITY_VALUE%" 
+      crossorigin="anonymous"></script>
+    <script>
+      // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해야 합니다.
+      Kakao.init("%VITE_APP_KAKAO_SDK_ID%");
+      console.log("Kakao.isInitialized() : " + Kakao.isInitialized());
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -8,6 +8,7 @@ import Button from '@/components/Button.tsx';
 import { toast, ToastOptions } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const { Kakao } = window;
 const mobileType = navigator.userAgent.toLowerCase();
 const toastOptions: ToastOptions = {
   position: "bottom-center",
@@ -29,6 +30,19 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         .catch((error) => {
           console.error('Web Share API error:', error);
         });
+    }
+    else if (Kakao.isInitialized()) { // 설치 여부 검사 필요
+      Kakao.Share.sendDefault({
+        objectType: 'text',
+        text: '간단한 JavaScript SDK 샘플과 함께 카카오 플랫폼 서비스 개발을 시작해 보세요.',
+        link: {
+          mobileWebUrl: url,
+          webUrl: url,
+        },
+        serverCallbackArgs: {
+          key: 'value', // 사용자 정의 파라미터 설정
+        },
+      });
     }
     else {
       navigator.clipboard.writeText(url).then(
