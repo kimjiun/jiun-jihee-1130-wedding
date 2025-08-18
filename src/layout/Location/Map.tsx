@@ -10,12 +10,11 @@ const Map = () => {
       style={{
         width: '100%',
         height: '300px',
+        touchAction: 'none',
       }}>
       <NaverMap
         defaultCenter={new navermaps.LatLng(lat, lon)}
         defaultZoom={17}
-        draggable={false}
-        pinchZoom={false}
         scrollWheel={false}
         keyboardShortcuts={false}>
         <Marker defaultPosition={new navermaps.LatLng(lat, lon)} />

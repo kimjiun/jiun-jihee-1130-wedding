@@ -55,7 +55,7 @@
         {
           "name": "심재숙",
           "relation": "어머니",
-          "bank": "농협",
+          "bank": "SC제일",
           "account": "64720497336",
           "kakaopayAccount": "https://qr.kakaopay.com/FeTpQO4Mj"
         }
@@ -88,7 +88,7 @@
   ],
   "mapInfo": {
     "address1": "SW 컨벤션센터",
-    "address2": "서울 종로구 지봉로 19 시즌빌딩 11층\n서울 종로구 창신동 328-18 시즌빌딩 11층\n📞 02-3673-5000",
+    "address2": "서울 종로구 지봉로 19\n시즌빌딩 11층\n서울 종로구 창신동 328-18\n시즌빌딩 11층\n📞 02-3673-5000",
     "naverMap": "https://map.naver.com/p/entry/place/11540622?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202507281640&locale=ko&svcName=map_pcv5",
     "kakaoMap": "https://map.kakao.com/?urlX=503345.0000000021&urlY=1131100&urlLevel=3&itemId=7918739&q=SW컨벤션센터&srcid=7918739&map_type=TYPE_MAP",
     "lat": 37.5716999,
