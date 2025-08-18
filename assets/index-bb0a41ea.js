@@ -218,7 +218,7 @@ Error generating stack: `+o.message+`
   color: #1a1a1a;
   text-decoration: none;
   gap: 2px;
-`.withComponent("a"),Px=navigator.userAgent.toLowerCase(),Ix={position:"bottom-center",autoClose:500,hideProgressBar:!0},Ox=({isVisible:e})=>{const{emojis:t}=le,n=()=>{const s=window.location.href;navigator.canShare()?navigator.share({url:s}).catch(a=>{console.error("Web Share API error:",a)}):navigator.clipboard.writeText(s).then(()=>{Px.indexOf("android")<0&&J("주소가 복사되었습니다.",Ix)},()=>{console.error("주소 복사에 실패했습니다.")})},r=()=>{i.addConfetti({emojis:t})},i=new Cx;return Q(Lx,{isVisible:e,children:[b(li,{onClick:r,children:b(Tx,{fill:"#e88ca6"})}),Q(li,{onClick:n,children:[b(Ex,{fill:"#e88ca6"}),"링크 공유"]}),Q(li,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[b(kx,{fill:"#e88ca6"}),"위로"]})]})},Lx=j.nav`
+`.withComponent("a"),Px=navigator.userAgent.toLowerCase(),Ix={position:"bottom-center",autoClose:500,hideProgressBar:!0},Ox=({isVisible:e})=>{const{emojis:t}=le,n=()=>{var a;const s=window.location.href;(a=window.Android)!=null&&a.share?window.Android.share(s):navigator.share?navigator.share({url:s}).catch(l=>{console.error("Web Share API error:",l)}):navigator.clipboard.writeText(s).then(()=>{Px.indexOf("android")<0&&J("주소가 복사되었습니다.",Ix)},()=>{console.error("주소 복사에 실패했습니다.")})},r=()=>{i.addConfetti({emojis:t})},i=new Cx;return Q(Lx,{isVisible:e,children:[b(li,{onClick:r,children:b(Tx,{fill:"#e88ca6"})}),Q(li,{onClick:n,children:[b(Ex,{fill:"#e88ca6"}),"링크 공유"]}),Q(li,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[b(kx,{fill:"#e88ca6"}),"위로"]})]})},Lx=j.nav`
   min-width: 280px;
   position: fixed;
   bottom: 30px;
