@@ -87,8 +87,10 @@ Error generating stack: `+o.message+`
 저희의 새로운 하루를
 따뜻한 축복으로 물들여 주세요.`,host:{groom:{name:"지운",relation:"아들",parents:[{relation:"아버지",name:"김남준"},{relation:"어머니",name:"심재숙"}]},bride:{name:"지희",relation:"딸",parents:[{relation:"아버지",name:"김학빈"},{relation:"어머니",name:"권외숙"}]}},eventDetail:`날짜 : 2025년 11월 02일 (일)
 오전 11:00
-장소 : SW 컨벤션센터`},Gw=[{host:"신랑측",accountInfo:[{name:"김지운",relation:"신랑",bank:"국민",account:"43890101212053",kakaopayAccount:"https://qr.kakaopay.com/Ej77ccTIz"},{name:"김남준",relation:"아버지",bank:"하나",account:"18789076773007"},{name:"심재숙",relation:"어머니",bank:"농협",account:"64720497336",kakaopayAccount:"https://qr.kakaopay.com/FeTpQO4Mj"}]},{host:"신부측",accountInfo:[{name:"김지희",relation:"신부",bank:"신한",account:"110516549840",kakaopayAccount:"https://qr.kakaopay.com/Ej7yjhCKN"},{name:"김학빈",relation:"아버지",bank:"신한",account:"110373821598"},{name:"권외숙",relation:"어머니",bank:"우리",account:"1002437201211"}]}],Xw={address1:"SW 컨벤션센터",address2:`서울 종로구 지봉로 19 시즌빌딩 11층
-서울 종로구 창신동 328-18 시즌빌딩 11층
+장소 : SW 컨벤션센터`},Gw=[{host:"신랑측",accountInfo:[{name:"김지운",relation:"신랑",bank:"국민",account:"43890101212053",kakaopayAccount:"https://qr.kakaopay.com/Ej77ccTIz"},{name:"김남준",relation:"아버지",bank:"하나",account:"18789076773007"},{name:"심재숙",relation:"어머니",bank:"SC제일",account:"64720497336",kakaopayAccount:"https://qr.kakaopay.com/FeTpQO4Mj"}]},{host:"신부측",accountInfo:[{name:"김지희",relation:"신부",bank:"신한",account:"110516549840",kakaopayAccount:"https://qr.kakaopay.com/Ej7yjhCKN"},{name:"김학빈",relation:"아버지",bank:"신한",account:"110373821598"},{name:"권외숙",relation:"어머니",bank:"우리",account:"1002437201211"}]}],Xw={address1:"SW 컨벤션센터",address2:`서울 종로구 지봉로 19
+시즌빌딩 11층
+서울 종로구 창신동 328-18
+시즌빌딩 11층
 📞 02-3673-5000`,naverMap:"https://map.naver.com/p/entry/place/11540622?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202507281640&locale=ko&svcName=map_pcv5",kakaoMap:"https://map.kakao.com/?urlX=503345.0000000021&urlY=1131100&urlLevel=3&itemId=7918739&q=SW컨벤션센터&srcid=7918739&map_type=TYPE_MAP",lat:37.5716999,lon:127.0151853},qw=[{title:"📍 지하철",desc:`🚇 1·6호선 동묘앞역 6번 출구 (도보 2분)
 🚇 1·4호선 동대문역 4번 출구 (도보 5분)`},{title:"📍 버스",desc:`🚌 142
 · 동묘앞역 6번 출구
@@ -216,7 +218,7 @@ Error generating stack: `+o.message+`
   color: #1a1a1a;
   text-decoration: none;
   gap: 2px;
-`.withComponent("a"),Px=navigator.userAgent.toLowerCase(),Ix={position:"bottom-center",autoClose:500,hideProgressBar:!0},Ox=({isVisible:e})=>{const{emojis:t}=le,n=()=>{var a;const s=window.location.href;(a=window.Android)!=null&&a.share?window.Android.share(s):navigator.share?navigator.share({url:s}).catch(l=>{console.error("Web Share API error:",l)}):navigator.clipboard.writeText(s).then(()=>{Px.indexOf("android")<0&&J("주소가 복사되었습니다.",Ix)},()=>{console.error("주소 복사에 실패했습니다.")})},r=()=>{i.addConfetti({emojis:t})},i=new Cx;return Q(Lx,{isVisible:e,children:[b(li,{onClick:r,children:b(Tx,{fill:"#e88ca6"})}),Q(li,{onClick:n,children:[b(Ex,{fill:"#e88ca6"}),"링크 공유"]}),Q(li,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[b(kx,{fill:"#e88ca6"}),"위로"]})]})},Lx=j.nav`
+`.withComponent("a"),Px=navigator.userAgent.toLowerCase(),Ix={position:"bottom-center",autoClose:500,hideProgressBar:!0},Ox=({isVisible:e})=>{const{emojis:t}=le,n=()=>{const s=window.location.href;navigator.canShare()?navigator.share({url:s}).catch(a=>{console.error("Web Share API error:",a)}):navigator.clipboard.writeText(s).then(()=>{Px.indexOf("android")<0&&J("주소가 복사되었습니다.",Ix)},()=>{console.error("주소 복사에 실패했습니다.")})},r=()=>{i.addConfetti({emojis:t})},i=new Cx;return Q(Lx,{isVisible:e,children:[b(li,{onClick:r,children:b(Tx,{fill:"#e88ca6"})}),Q(li,{onClick:n,children:[b(Ex,{fill:"#e88ca6"}),"링크 공유"]}),Q(li,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[b(kx,{fill:"#e88ca6"}),"위로"]})]})},Lx=j.nav`
   min-width: 280px;
   position: fixed;
   bottom: 30px;
@@ -252,7 +254,7 @@ Error generating stack: `+o.message+`
     rgb(255, 255, 255) 90%
   );
 `,X2=j.div`
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
   padding: 6px 12px;
   font-size: 1rem;
@@ -300,7 +302,7 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   text-align: left;
-`,aC=()=>{const{lat:e,lon:t}=le.mapInfo,n=Dt();return b(nw,{style:{width:"100%",height:"300px"},children:b(Rw,{defaultCenter:new n.LatLng(e,t),defaultZoom:17,draggable:!1,pinchZoom:!1,scrollWheel:!1,keyboardShortcuts:!1,children:b($_,{defaultPosition:new n.LatLng(e,t)})})})},lC=()=>{const{naverMap:e,kakaoMap:t}=le.mapInfo;return Q(uC,{children:[b(li,{onClick:()=>window.open(e),children:"네이버 지도"}),b(li,{onClick:()=>window.open(t),children:"카카오맵"})]})},uC=j.div`
+`,aC=()=>{const{lat:e,lon:t}=le.mapInfo,n=Dt();return b(nw,{style:{width:"100%",height:"300px",touchAction:"none"},children:b(Rw,{defaultCenter:new n.LatLng(e,t),defaultZoom:17,scrollWheel:!1,keyboardShortcuts:!1,children:b($_,{defaultPosition:new n.LatLng(e,t)})})})},lC=()=>{const{naverMap:e,kakaoMap:t}=le.mapInfo;return Q(uC,{children:[b(li,{onClick:()=>window.open(e),children:"네이버 지도"}),b(li,{onClick:()=>window.open(t),children:"카카오맵"})]})},uC=j.div`
   margin: 8px;
   display: flex;
   gap: 8px;
