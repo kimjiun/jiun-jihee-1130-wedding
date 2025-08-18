@@ -14,6 +14,14 @@ export const Heading2 = styled.p`
   white-space: pre-line;
 `;
 
+export const LocationPointTitle = styled.p`
+  font-family: Main-Font, serif;
+  line-height: 130%;
+  margin: 0;
+  color: #e88ca6;
+  white-space: pre-line;
+`;
+
 export const PointTitle = styled.p`
   font-family: Main-Font, serif;
   line-height: 1;
