@@ -8,15 +8,6 @@ import Button from '@/components/Button.tsx';
 import { toast, ToastOptions } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// For Android WebView Javascript Interface
-declare global {
-  interface Window {
-    Android?: {
-      share: (url: string) => void;
-    };
-  }
-}
-
 const mobileType = navigator.userAgent.toLowerCase();
 const toastOptions: ToastOptions = {
   position: "bottom-center",
@@ -30,12 +21,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCopy = () => {
     const url = window.location.href;
 
-    // 1. Check for native Android interface (if in a WebView)
-    if (window.Android?.share) {
-      window.Android.share(url);
-    }
-    // 2. Check for standard Web Share API
-    else if (navigator.share) {
+    if (navigator.share) {
       navigator
         .share({
           url: url,
@@ -44,7 +30,6 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
           console.error('Web Share API error:', error);
         });
     }
-    // 3. Fallback to clipboard for desktop/unsupported browsers
     else {
       navigator.clipboard.writeText(url).then(
         () => {
