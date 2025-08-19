@@ -96,7 +96,7 @@ Error generating stack: `+o.message+`
 장소 : SW 컨벤션센터`},Yw=[{host:"신랑측",accountInfo:[{name:"김지운",relation:"신랑",bank:"국민",account:"43890101212053",kakaopayAccount:"https://qr.kakaopay.com/Ej77ccTIz"},{name:"김남준",relation:"아버지",bank:"하나",account:"18789076773007"},{name:"심재숙",relation:"어머니",bank:"SC제일",account:"64720497336",kakaopayAccount:"https://qr.kakaopay.com/FeTpQO4Mj"}]},{host:"신부측",accountInfo:[{name:"김지희",relation:"신부",bank:"신한",account:"110516549840",kakaopayAccount:"https://qr.kakaopay.com/Ej7yjhCKN"},{name:"김학빈",relation:"아버지",bank:"신한",account:"110373821598"},{name:"권외숙",relation:"어머니",bank:"우리",account:"1002437201211"}]}],Qw={address1:`SW 컨벤션센터
 (시즌빌딩 11층)`,address2:`📍 서울 종로구 지봉로 19
 📍 서울 종로구 창신동 328-18
-`,phone:"📞 02-3673-5000",naverMap:"https://map.naver.com/p/entry/place/11540622?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202507281640&locale=ko&svcName=map_pcv5",kakaoMap:"https://map.kakao.com/?urlX=503345.0000000021&urlY=1131100&urlLevel=3&itemId=7918739&q=SW컨벤션센터&srcid=7918739&map_type=TYPE_MAP",lat:37.5716999,lon:127.0151853},Jw=[{title:"🚈 지하철",desc:`📍 1·6호선 동묘앞역 6번 출구 (도보 2분)
+`,phone:"📞 02-3673-5000",naverMap:"https://naver.me/x5louMDn",kakaoMap:"https://map.kakao.com/?itemId=7918739",lat:37.5716999,lon:127.0151853},Jw=[{title:"🚈 지하철",desc:`📍 1·6호선 동묘앞역 6번 출구 (도보 2분)
 📍 1·4호선 동대문역 4번 출구 (도보 5분)`},{title:"🚌 버스",desc:`▸ 142
 📍 동묘앞역 6번 출구
 ▸ 1014
