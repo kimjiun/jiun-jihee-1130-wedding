@@ -52,7 +52,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         templateId: 123487,
         templateArgs: {
           TITLE: document.title,
-          PATH: window.location.pathname,
+          PATH: window.location.pathname.substring(1),
         }
       });
     }
